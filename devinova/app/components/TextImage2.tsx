@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 
-const TextImage1 = ({
+const TextImage2 = ({
   image,
   TextWithButton,
   imageRight,
@@ -17,8 +17,8 @@ const TextImage1 = ({
         imageRight && "flex-col-reverse md:flex-row-reverse"
       } `}
     >
-      <div className="relative md:w-1/2 h-full">
-        <Image alt="pic" src={image} layout="fill" objectFit="cover" />
+      <div className="relative md:w-1/2 h-full flex justify-center items-center md:justify-start">
+        <Image alt="pic" src={image} className=" w-4/5 min-w-[291px] max-w-[325px] md:max-w-none" />
       </div>
       <div className="flex justify-center items-center md:w-1/2 h-full opacity-100">
         <TextWithButton />
@@ -27,4 +27,4 @@ const TextImage1 = ({
   );
 };
 
-export default TextImage1;
+export default TextImage2;
