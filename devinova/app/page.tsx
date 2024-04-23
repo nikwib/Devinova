@@ -8,18 +8,8 @@ import TextImage2 from "./components/TextImage2";
 import HeroSection from "./components/HeroSection";
 const Home = () => {
 
-const TextWithButton = () => {
-  return(<div>Hiii</div>)
-}
-const HeroText = () => {
-  return(<div><h1></h1>
-  <p></p>
-  <p></p>
-  <div><button className="w-[220px]">Read More</button><button>Contact</button></div></div>)
-}
-
   return (<main>
-  <HeroSection image={heroImage} TextWithButton={HeroText} imageRight={false} />
+  <HeroSection image={heroImage} TextWithButton={TextWithButton} imageRight={false} />
     <TextImage1 image={meetingImage} TextWithButton={TextWithButton} imageRight={false} />
     <TextImage2 image={meetingImage2} TextWithButton={TextWithButton} imageRight={false} />
 
