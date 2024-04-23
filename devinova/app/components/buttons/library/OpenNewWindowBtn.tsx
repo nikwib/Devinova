@@ -1,8 +1,8 @@
 import { RxOpenInNewWindow } from "react-icons/rx";
-import CallToActionBtn from "./CallToActionBtn";
+import BtnWithIcon from "../BtnWithIcon";
 
 const OpenNewWindowBtn = ({ btnText }: { btnText: string }) => {
-  return <CallToActionBtn btnText={btnText} icon={<RxOpenInNewWindow />} />;
+  return <BtnWithIcon btnText={btnText} icon={<RxOpenInNewWindow />} />;
 };
 
 export default OpenNewWindowBtn;
