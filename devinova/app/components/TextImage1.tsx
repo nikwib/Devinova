@@ -6,7 +6,7 @@ const TextImage1 = ({
   imageRight,
 }: {
   image: StaticImageData;
-  TextWithButton: () => JSX.Element;
+  TextWithButton: JSX.Element;
   imageRight: boolean;
 }) => {
 
@@ -20,7 +20,7 @@ const TextImage1 = ({
         <Image alt="pic" src={image} layout="fill" objectFit="cover" />
       </div>
       <div className="flex justify-center items-center md:w-1/2 h-full opacity-100 p-10 md:p-20 xl:p-32">
-        <TextWithButton />
+        {TextWithButton}
       </div>
     </div>
   );
