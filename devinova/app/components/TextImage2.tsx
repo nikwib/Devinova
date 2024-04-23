@@ -13,7 +13,7 @@ const TextImage2 = ({
 
   return (
     <div
-      className={`flex flex-col md:flex-row bg-[#2B303A] w-full h-[100vh] ${
+      className={`flex flex-col md:flex-row bg-[url('../public/background.png')] w-full h-[100vh] ${
         imageRight && "flex-col-reverse md:flex-row-reverse"
       } `}
     >
