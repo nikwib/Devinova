@@ -2,7 +2,7 @@ import DesktopBtn from "./buttons/GoToBtn";
 import BodyThreeHeadings from "./textAreas/BodyThreeHeadings";
 import BodyTwoHeadings from "./textAreas/BodyTwoHeadings";
 
-const component = {
+const data = {
   subHeadAbove: "",
   title: "Title",
   subHead: "Subhead",
@@ -10,16 +10,16 @@ const component = {
   button: <DesktopBtn btnText="Apply" />,
 };
 
-const TextWithButton = (/* { component } : {component: any} */) => {
+const TextWithButton = (/* { data } : {data: any} */) => {
   return (
     <div className="dark:text-white">
-      {component.subHeadAbove ? (
-        <BodyThreeHeadings component={component} />
+      {data.subHeadAbove ? (
+        <BodyThreeHeadings data={data} />
       ) : (
-        <BodyTwoHeadings component={component} />
+        <BodyTwoHeadings data={data} />
       )}
 
-      {component.button}
+      {data.button}
     </div>
   );
 };
