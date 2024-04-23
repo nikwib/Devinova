@@ -1,13 +1,14 @@
 import TextImage1 from "./components/TextImage1";
 import meetingImage from "../public/meeting.png"
-export default function Home() {
+import TextWithButton from "./components/TextWithButton";
 
-const TextWithButton = () => {
-  return(<div>Hiii</div>)
-}
+const Home = () => {
 
-  return (<>
+  return (
+    <main>
     <TextImage1 image={meetingImage} TextWithButton={TextWithButton} imageRight={true} />
-    </>
+    </main>
   );
-}
+};
+
+export default Home;
