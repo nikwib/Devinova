@@ -1,9 +1,5 @@
-import React from 'react'
+const UnstyledBtn = ({ btnText }: { btnText: string }) => {
+  return <button className="shadow-lg shadow-black my-4 border-customGreen select-none text-customGrey px-6 min-w-52 py-3 rounded-md text-lg">{btnText}</button>;
+};
 
-const UnstyledBtn = () => {
-  return (
-    <div>UnstyledBtn</div>
-  )
-}
-
-export default UnstyledBtn
+export default UnstyledBtn;

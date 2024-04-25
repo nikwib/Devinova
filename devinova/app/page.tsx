@@ -1,12 +1,14 @@
 import TextImage1 from "./components/TextImage1";
-import meetingImage from "../public/meeting.png"
+import meetingImage from "../public/meeting.png";
 import TextWithButton from "./components/TextWithButton";
-import meetingImage2 from "../public/meeting2.png"
-import heroImage from "../public/hero.png"
+import meetingImage2 from "../public/meeting2.png";
+import heroImage from "../public/hero.png";
 import TextImage2 from "./components/TextImage2";
 import HeroSection from "./components/HeroSection";
 import LeftArrowInCircleBtn from "./components/buttons/library/LeftArrowInCircleBtn";
 import OpenNewWindowBtn from "./components/buttons/library/OpenNewWindowBtn";
+import BodyTwoHeadings from "./components/textAreas/BodyTwoHeadings";
+import Expandable from "./components/Expandable";
 
 const data2 = {
   subHeadAbove: "subhead above",
@@ -24,12 +26,16 @@ const data1 = {
 };
 
 const Home = () => {
-
-  return (<main>
-  <HeroSection image={heroImage} TextWithButton={<TextWithButton data={data1} />} imageRight={false} />
+  return (
+    <main className="min-h-screen w-full p-20 ">
+      {/* <HeroSection image={heroImage} TextArea={<BodyTwoHeadings data={data1} />} imageRight={false} />
     <TextImage1 image={meetingImage} TextWithButton={<TextWithButton data={data1}/>} imageRight={false} />
-    <TextImage2 image={meetingImage2} TextWithButton={<TextWithButton data={data2} />} imageRight={false} />
-
+    <TextImage2 image={meetingImage2} TextWithButton={<TextWithButton data={data2} />} imageRight={false} /> */}
+      <div className="w-2/3 h-[500px]">
+      <Expandable data={data1} textColor={"text-white"} color={'white'} />
+      <Expandable data={data1} textColor={"text-pink-400"} color={'black'} />
+      <p>hello</p>
+      </div>
     </main>
   );
 };

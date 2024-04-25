@@ -3,7 +3,7 @@ import BodyTwoHeadings from "./textAreas/BodyTwoHeadings";
 
 const TextWithButton = ( { data } : {data: any} ) => {
   return (
-    <div className="dark:text-white">
+    <div>
       {data.subHeadAbove ? (
         <BodyThreeHeadings data={data} />
       ) : (
