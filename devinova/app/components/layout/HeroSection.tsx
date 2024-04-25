@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
-import TransparentWithBorderBtn from "./buttons/TransparentWithBorderBtn";
-import PurpleBtn from "./buttons/library/PurpleBtn";
+import TransparentWithBorderBtn from "../ui/buttons/TransparentWithBorderBtn";
+import PurpleBtn from "./buttons/PurpleBtn";
 
 const HeroSection = ({
   image,
