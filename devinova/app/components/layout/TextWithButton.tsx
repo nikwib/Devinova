@@ -1,9 +1,9 @@
-import BodyThreeHeadings from "./textAreas/BodyThreeHeadings";
-import BodyTwoHeadings from "./textAreas/BodyTwoHeadings";
+import BodyThreeHeadings from "../ui/BodyThreeHeadings";
+import BodyTwoHeadings from "../ui/BodyTwoHeadings";
 
 const TextWithButton = ( { data } : {data: any} ) => {
   return (
-    <div className="dark:text-white">
+    <div>
       {data.subHeadAbove ? (
         <BodyThreeHeadings data={data} />
       ) : (
