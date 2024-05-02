@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import TransparentWithBorderBtn from "../ui/buttons/TransparentWithBorderBtn";
 import PurpleBtn from "./buttons/PurpleBtn";
 
@@ -7,7 +7,7 @@ const HeroSection = ({
   TextArea,
   imageRight,
 }: {
-  image: StaticImageData;
+  image: string;
   TextArea: JSX.Element;
   imageRight: boolean;
 }) => {
@@ -25,6 +25,8 @@ const HeroSection = ({
         <Image
           alt="pic"
           src={image}
+          width={500}
+          height={600}
           className=" w-4/5 min-w-[291px] max-w-[325px] md:max-w-none"
         />
       </div>
