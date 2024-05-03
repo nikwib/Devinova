@@ -37,7 +37,7 @@ const getData = async () => {
     if (errors) {
       console.error(errors);
     } else {
-      revalidatePath("/")
+      // revalidatePath("/")
       return data.allSectionData;
     }
   } catch (error) {

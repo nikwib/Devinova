@@ -13,7 +13,7 @@ const HeroSection = ({
 }) => {
   return (
     <div
-      className={`flex flex-col md:flex-row bg-[url('../public/background.png')] bg-no-repeat bg-cover w-full md:h-screen min-h-screen ${
+      className={`flex flex-col md:flex-row bg-[url('../public/background.png')] bg-no-repeat bg-cover w-full min-h-screen ${
         imageRight && "flex-col-reverse md:flex-row-reverse"
       } `}
     >
