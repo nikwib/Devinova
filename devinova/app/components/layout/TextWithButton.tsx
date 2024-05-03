@@ -4,6 +4,16 @@ import ArrowInCircleBtn from "./buttons/ArrowInCircleBtn";
 import ArrowBtn from "./buttons/ArrowBtn";
 import OpenNewWindowBtn from "./buttons/OpenNewWindowBtn";
 const TextWithButton = ({ data }: { data: any }) => {
+
+  let buttonComponent = null;
+
+  if (data.buttonType === "arroCircle") {
+    buttonComponent = <ArrowInCircleBtn btnText={data.button} />;
+  } else if (data.buttonType === "arro") {
+    buttonComponent = <ArrowBtn btnText={data.button} />;
+  } else if (data.buttonType === "open") {
+    buttonComponent = <OpenNewWindowBtn btnText={data.button} />;
+  }
   return (
     <div>
       {data.subHeadAbove ? (
@@ -11,15 +21,7 @@ const TextWithButton = ({ data }: { data: any }) => {
       ) : (
         <BodyTwoHeadings data={data} />
       )}
-      {data.buttonType == "arroCircle" ? (
-        <ArrowInCircleBtn btnText={data.button} />
-      ) : data.buttonType == "arro" ? (
-        <ArrowBtn btnText={data.button} />
-      ) : data.buttonType == "open" ? (
-        <OpenNewWindowBtn btnText={data.button} />
-      ) : (
-        ""
-      )}
+      {buttonComponent}
     </div>
   );
 };
