@@ -1,5 +1,5 @@
 import React from 'react'
-import Expandable from '../ui/Expandable';
+import Expandable from '../ui/Expand';
 
 const ExpandableList = ({
     data

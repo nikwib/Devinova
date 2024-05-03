@@ -8,7 +8,7 @@ import HeroSection from "./components/layout/HeroSection";
 import LeftArrowInCircleBtn from "./components/layout/buttons/LeftArrowInCircleBtn";
 import OpenNewWindowBtn from "./components/layout/buttons/OpenNewWindowBtn";
 import BodyTwoHeadings from "./components/ui/BodyTwoHeadings";
-import Expandable from "./components/ui/Expandable";
+import Expand from "./components/ui/Expand";
 import ExpandableList from "./components/layout/ExpandableList";
 
 const data = {
@@ -43,8 +43,8 @@ const Home = () => {
     <TextImage1 image={meetingImage} TextWithButton={<TextWithButton data={data.data}/>} imageRight={false} />
     <TextImage2 image={meetingImage2} TextWithButton={<TextWithButton data={data.data2} />} imageRight={false} />
       <div className="w-1/2">
-      <Expandable data={data.data} textColor={"text-white"} />
-      <Expandable data={data.data3} textColor={"text-pink-400"} />
+      <Expand data={data.data} textColor={"text-white"} />
+      <Expand data={data.data3} textColor={"text-pink-400"} />
       <p>hello</p>
       </div>
       <ExpandableList data={data} />
