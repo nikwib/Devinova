@@ -6,15 +6,17 @@ import BodyTwoHeadings from "./components/ui/BodyTwoHeadings";
 import ExpandableList from "./components/layout/ExpandableList";
 import getData from "./utils/sectionData";
 import { data } from "./utils/interfaces";
+import Footer from "./components/layout/Footer";
 const Home = async () => {
   
   const data: data[] | null = await  getData()
   
 
   return (
-    <main className="min-h-screen w-full pb-96">
+    <>
+    <main className="min-h-screen w-full">
       {data && data.map((item, index) =>
-        item.type == "Hero" ? (
+        item.type == "HeroSection" ? (
           <HeroSection
             key={index}
             image={item.image}
@@ -40,8 +42,10 @@ const Home = async () => {
           ""
         )
       )}
-       {data && <ExpandableList data={data} />}
+       {/* {data && <ExpandableList data={data} />} */}
     </main>
+    <Footer />
+    </>
   );
 };
 

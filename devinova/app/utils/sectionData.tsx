@@ -1,3 +1,5 @@
+import { revalidatePath } from "next/cache";
+
 const getData = async () => {
   const query = `
   query {
@@ -35,6 +37,7 @@ const getData = async () => {
     if (errors) {
       console.error(errors);
     } else {
+      revalidatePath("/")
       return data.allSectionData;
     }
   } catch (error) {
