@@ -7,14 +7,16 @@ import BodyTwoHeadings from "./components/ui/BodyTwoHeadings";
 import getData from "./utils/sectionData";
 import { data } from "./utils/interfaces";
 import Footer from "./components/layout/Footer";
+import Header from "./components/layout/Header";
 
 const Home = async () => {
   const data: data[] | null = await getData();
 
   return (
     <>
+      <Header />
       <main className="min-h-screen w-full">
-      {data &&
+        {data &&
           data.map((item, index) => {
             if (item.type === "HeroSection") {
               return (
