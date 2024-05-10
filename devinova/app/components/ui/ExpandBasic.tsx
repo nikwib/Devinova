@@ -24,14 +24,20 @@ const ExpandBasic = ({ data, textColor }: { data: any; textColor: string }) => {
 
         <ExpandBtn handleOpen={handleOpen} open={open} />
       </section>
-          <section className={data.type == 'ExpandBorderBottom' ? 'border-b-[1px] pb-4' : ''}> {/* add only for mobile view */}
+      <section
+        className={
+          data.type == "ExpandBorderBottom" ? "border-b-[1px] pb-4" : ""
+        }
+      >
+        {" "}
+        {/* add only for mobile view */}
         <ExpandTextSection
           open={open}
           contentHeight={contentHeight}
           setContentHeight={setContentHeight}
           data={data}
         />
-        </section>
+      </section>
     </article>
   );
 };

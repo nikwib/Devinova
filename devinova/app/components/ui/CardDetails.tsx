@@ -1,10 +1,10 @@
 import Image, { StaticImageData } from "next/image";
 
-const Card = ({ data, image, TextType }: { data: any; image: StaticImageData, TextType: any }) => {
+const CardDetails = ({ data, image, TextType }: { data: any; image: StaticImageData, TextType: any }) => {
 
   return (
     <div
-      className=" flex flex-col items-center" //w: 384px
+      className=" flex flex-col items-center"
       style={{ maxWidth: `${image.width}px` }}
     >
       <div className="bg-neutralGreyNight flex flex-col justify-center rounded-xl py-6 px-2 mb-7 ">
@@ -18,4 +18,4 @@ const Card = ({ data, image, TextType }: { data: any; image: StaticImageData, Te
   );
 };
 
-export default Card
+export default CardDetails
