@@ -26,11 +26,11 @@ const Header = () => {
     { label: "Contact", link: "#" },
   ];
   return (
-    <div className="p-8 flex flex-row justify-between">
+    <div className=" bg-[#1f2228] lg:border-none border-b-gray-600 border-b-4 p-8 flex flex-row justify-between">
       <div>
         <Image src={logo} alt="Devinova Logo" width={200} height={100} />
       </div>
-      <div>
+      <div className="flex items-center">
         <MobileMenu data={menu} />
         <NavBar data={menu} />
       </div>

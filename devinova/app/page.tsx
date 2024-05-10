@@ -3,7 +3,6 @@ import TextWithButton from "./components/layout/TextWithButton";
 import TextImage2 from "./components/layout/TextImage2";
 import HeroSection from "./components/layout/HeroSection";
 import BodyTwoHeadings from "./components/ui/BodyTwoHeadings";
-//import ExpandableList from "./components/layout/ExpandableList";
 import getData from "./utils/sectionData";
 import { data } from "./utils/interfaces";
 import Footer from "./components/layout/Footer";
@@ -46,7 +45,7 @@ const Home = async () => {
                 />
               );
             } else {
-              return null; // Or render a default component
+              return null;
             }
           })}
       </main>

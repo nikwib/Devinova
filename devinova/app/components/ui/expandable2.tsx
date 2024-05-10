@@ -4,8 +4,8 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 const Expandable2 = ({ data, textColor }: { data: any; textColor: string }) => {
   const [open, setOpen] = useState(false);
-console.log("wiiii", data.title);
-console.log(data);
+  console.log("wiiii", data.title);
+  console.log(data);
 
   const handleOpen = () => {
     setOpen(!open);
@@ -19,7 +19,7 @@ console.log(data);
             textColor ? textColor : "dark:text-neutralGrey"
           }`}
         >
-          {data.title}
+          {data.title || data.label}
         </h3>
         <button
           className={`text-2xl dark:text-neutralGrey`}
@@ -33,7 +33,18 @@ console.log(data);
           open ? "grid-rows-[1fr]" : " grid-rows-[0fr]"
         } duration-500`}
       >
-        <div className={`overflow-hidden dark:text-neutralGrey ${open ? "pt-8" : ""} duration-1000`}>{data.body}</div>
+        <div
+          className={`overflow-hidden dark:text-neutralGrey ${
+            open ? "pt-8" : ""
+          } duration-1000`}
+        >
+          {data.body ||
+            data.subMenu.map((item: any, index: number) => (
+              <a key={index} href={item.link}>
+                <p>{item.label}</p>
+              </a>
+            ))}
+        </div>
       </div>
     </article>
   );
