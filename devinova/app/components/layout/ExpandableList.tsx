@@ -1,5 +1,5 @@
-import React from "react";
-import Expandable from "../ui/Expandable";
+import React from 'react'
+import Expandable from '../ui/Expand';
 import Expandable2 from "../ui/expandable2";
 import { data } from "@/app/utils/interfaces";
 
