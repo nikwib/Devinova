@@ -3,18 +3,19 @@ import TextWithButton from "./components/layout/TextWithButton";
 import TextImage2 from "./components/layout/TextImage2";
 import HeroSection from "./components/layout/HeroSection";
 import BodyTwoHeadings from "./components/ui/BodyTwoHeadings";
-//import ExpandableList from "./components/layout/ExpandableList";
 import getData from "./utils/sectionData";
 import { data } from "./utils/interfaces";
 import Footer from "./components/layout/Footer";
+import Header from "./components/layout/Header";
 
 const Home = async () => {
   const data: data[] | null = await getData();
 
   return (
     <>
+      <Header />
       <main className="min-h-screen w-full">
-      {data &&
+        {data &&
           data.map((item, index) => {
             if (item.type === "HeroSection") {
               return (
@@ -44,7 +45,7 @@ const Home = async () => {
                 />
               );
             } else {
-              return null; // Or render a default component
+              return null;
             }
           })}
       </main>
