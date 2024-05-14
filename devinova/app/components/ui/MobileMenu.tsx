@@ -32,7 +32,7 @@ const MobileMenu = ({ data }: { data: any }) => {
         <div>
           <ul className="inline-flex flex-col gap-3 text-xl">
             {data.map((item: any, index: number) =>
-              item.subMenu ? (
+              item.subMenuItem ? (
                 <ExpandableMenu
                   key={index}
                   data={item}

@@ -9,12 +9,12 @@ const NavBar = ({ data }: { data: any }) => {
         {data.map((item: any, index: number) => (
           <li
             className={`${
-              !item.subMenu &&
+              !item.subMenuItem &&
               "hover:border-b-4 pb-1 transition-all duration-100 ease-in-out"
             } border-violet-400`}
             key={index}
           >
-            {item.subMenu ? (
+            {item.subMenuItem ? (
               <ExpandableMenu
                 data={item}
                 lineColor="violet-400"

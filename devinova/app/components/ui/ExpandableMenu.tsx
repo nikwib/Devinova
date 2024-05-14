@@ -35,7 +35,7 @@ const ExpandableMenu = ({
         } duration-500`}
       >
         <div className=" overflow-hidden dark:text-neutralGrey duration-1000">
-          {data.subMenu.map((item: any, index: number) => (
+          {data.subMenuItem.map((item: any, index: number) => (
             <a
               className={`pl-2 pt-1 hover:border-b-4 flex items-center justify-between border-${lineColor}`}
               key={index}

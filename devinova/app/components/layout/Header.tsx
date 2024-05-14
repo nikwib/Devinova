@@ -2,29 +2,12 @@ import logo from "@/app/assets/logo.png";
 import Image from "next/image";
 import NavBar from "../ui/NavBar";
 import MobileMenu from "../ui/MobileMenu";
-const Header = () => {
-  const menu = [
-    {
-      label: "Home",
-      link: "#",
-    },
-    { label: "New Nova", link: "#" },
-    { label: "Career", link: "#" },
-    {
-      label: "Services",
-      link: "#",
-      subMenu: [
-        {
-          label: "Services1",
-          link: "#",
-        },
-        { label: "Services2", link: "#" },
-        { label: "Services3", link: "#" },
-      ],
-    },
-    { label: "About", link: "#" },
-    { label: "Contact", link: "#" },
-  ];
+import getData from "@/app/utils/menuItems";
+import { menuItems } from "@/app/utils/interfaces";
+const Header = async () => {
+  const menu: menuItems[] | null = await getData();
+  console.log("MEEEEENU", menu);
+
   return (
     <div className=" bg-[#1f2228] lg:border-none border-b-gray-600 border-b-4 p-8 flex flex-row justify-between">
       <div>
