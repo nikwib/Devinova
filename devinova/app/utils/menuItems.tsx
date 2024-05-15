@@ -2,7 +2,7 @@ import { revalidatePath } from "next/cache";
 
 const getData = async () => {
   const query = `
-query {allMenuItems{label link subMenuItem{label link}}}
+query {allMenuItems{label link orderRank subMenuItem{label link}}}
     `;
 
   try {
