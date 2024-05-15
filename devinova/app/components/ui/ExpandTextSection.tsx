@@ -1,3 +1,4 @@
+import { sectionData } from "@/app/utils/interfaces";
 import { Dispatch, SetStateAction, useEffect, useRef } from "react";
 
 const ExpandTextSection = ({
@@ -9,7 +10,7 @@ const ExpandTextSection = ({
   open: boolean;
   contentHeight: number;
   setContentHeight: Dispatch<SetStateAction<number>>;
-  data: any;
+  data: sectionData;
 }) => {
   const contentRef = useRef<HTMLParagraphElement>(null);
 

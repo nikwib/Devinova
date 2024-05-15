@@ -1,11 +1,12 @@
 import { StaticImageData } from "next/image";
 import CardDetails from "./CardDetails";
+import { sectionData } from "@/app/utils/interfaces";
 
 const CardDesktop = ({
   data,
   image,
 }: {
-  data: any;
+  data: sectionData;
   image: StaticImageData;
 }) => {
   const text = (

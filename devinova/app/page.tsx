@@ -3,13 +3,16 @@ import TextWithButton from "./components/layout/TextWithButton";
 import TextImage2 from "./components/layout/TextImage2";
 import HeroSection from "./components/layout/HeroSection";
 import BodyTwoHeadings from "./components/ui/BodyTwoHeadings";
-import getData from "./utils/sectionData";
-import { data } from "./utils/interfaces";
+import getData from "./utils/fetchSanityData";
+import { sectionData } from "./utils/interfaces";
 import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
-
+import { allSectionData } from "./utils/queries";
 const Home = async () => {
-  const data: data[] | null = await getData();
+  const data: sectionData[] | null = await getData(
+    allSectionData,
+    "allSectionData"
+  );
 
   return (
     <>

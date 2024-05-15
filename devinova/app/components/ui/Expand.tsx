@@ -2,8 +2,15 @@
 import { useState } from "react";
 import ExpandTextSection from "./ExpandTextSection";
 import ExpandBtn from "./buttons/ExpandBtn";
+import { sectionData } from "@/app/utils/interfaces";
 
-const Expand = ({ data, textColor }: { data: any; textColor: string }) => {
+const Expand = ({
+  data,
+  textColor,
+}: {
+  data: sectionData;
+  textColor: string;
+}) => {
   const [open, setOpen] = useState(false);
   const [contentHeight, setContentHeight] = useState(0);
 

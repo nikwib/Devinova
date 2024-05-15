@@ -1,4 +1,4 @@
-export interface data {
+export interface sectionData {
   type: string;
   head: string;
   subHeadAbove: string;
@@ -15,7 +15,7 @@ export interface data {
 export interface menuItems {
   label: string;
   link: string;
-  subMenu: subMenuItem;
+  subMenu: subMenuItem[];
 }
 
 export interface subMenuItem {

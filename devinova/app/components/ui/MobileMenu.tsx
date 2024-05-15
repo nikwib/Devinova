@@ -4,8 +4,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import LightMode from "./LightMode";
 import ExpandableMenu from "./ExpandableMenu";
+import { menuItems } from "@/app/utils/interfaces";
 
-const MobileMenu = ({ data }: { data: any }) => {
+const MobileMenu = ({ data }: { data: menuItems[] }) => {
   const [open, setOpen] = useState(false);
   return (
     <div className="relative flex items-center gap-4 text-neutralGrey lg:hidden overflow-hidden">

@@ -1,7 +1,15 @@
+import { sectionData } from "@/app/utils/interfaces";
 import Image, { StaticImageData } from "next/image";
 
-const CardDetails = ({ data, image, TextType }: { data: any; image: StaticImageData, TextType: any }) => {
-
+const CardDetails = ({
+  data,
+  image,
+  TextType,
+}: {
+  data: sectionData;
+  image: StaticImageData;
+  TextType: JSX.Element;
+}) => {
   return (
     <div
       className=" flex flex-col items-center"
@@ -18,4 +26,4 @@ const CardDetails = ({ data, image, TextType }: { data: any; image: StaticImageD
   );
 };
 
-export default CardDetails
+export default CardDetails;
