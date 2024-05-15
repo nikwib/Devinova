@@ -32,7 +32,7 @@ query {allMenuItems(sort:[{ orderRank:  ASC}]){
     if (errors) {
       console.error(errors);
     } else {
-      // revalidatePath("/")
+      revalidatePath("/");
       return data.allMenuItems;
     }
   } catch (error) {
