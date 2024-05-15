@@ -2,7 +2,17 @@ import { revalidatePath } from "next/cache";
 
 const getData = async () => {
   const query = `
-query {allMenuItems{label link orderRank subMenuItem{label link}}}
+query {allMenuItems(sort:[{ orderRank:  ASC}]){
+  label 
+  link
+  
+  
+  subMenuItem{
+    label 
+    link
+  }
+}
+}
     `;
 
   try {

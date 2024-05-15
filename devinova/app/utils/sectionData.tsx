@@ -3,7 +3,7 @@ import { revalidatePath } from "next/cache";
 const getData = async () => {
   const query = `
   query {
-    allSectionData { 
+    allSectionData(sort:[{ orderRank: ASC}]) { 
         type 
         head 
         subHeadAbove 
