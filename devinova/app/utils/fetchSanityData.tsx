@@ -14,7 +14,6 @@ const getData = async (query: string, contentName: string) => {
 
     const { data, errors } = await res.json();
     const { [contentName]: sanityData } = data;
-    
 
     if (errors) {
       console.error(errors);
