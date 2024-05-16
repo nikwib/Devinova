@@ -2,7 +2,8 @@ import { revalidatePath } from "next/cache";
 
 const getData = async (query: string, contentName: string) => {
   try {
-    const URL = process.env.FETCH_URL;
+    const URL =
+      "https://426kwv4m.api.sanity.io/v2023-08-01/graphql/production/default";
     const res = await fetch(`${URL}`, {
       method: "POST",
       headers: {
