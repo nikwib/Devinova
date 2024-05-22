@@ -16,7 +16,6 @@ const Home = async () => {
 
   return (
     <>
-      <Header />
       <main className="min-h-screen w-full">
         {data &&
           data.map((item, index) => {
@@ -52,7 +51,6 @@ const Home = async () => {
             }
           })}
       </main>
-      <Footer />
     </>
   );
 };
