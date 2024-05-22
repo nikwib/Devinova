@@ -1,7 +1,6 @@
-import React from "react";
+import { sectionData } from "@/app/utils/interfaces";
 
-const BodyTwoHeadings = ({ data }: { data: any }) => {
-  
+const BodyTwoHeadings = ({ data }: { data: sectionData }) => {
   return (
     <>
       <h4 className="text-4xl py-4 dark:text-white">{data.title}</h4>

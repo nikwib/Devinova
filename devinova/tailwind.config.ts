@@ -18,7 +18,8 @@ const config: Config = {
         customGrey: '#2b303a',
         primary: '#9747FF', //primary
         notification: '#64B8FF',
-        neutralGrey: '#EDF0F7'
+        neutralGrey: '#EDF0F7',
+        neutralGreyNight: '#2B303A'
 
       }
     },
