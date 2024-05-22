@@ -1,4 +1,4 @@
-import logo from "@/app/assets/logo.png";
+import logo from "@/app/assets/logo.svg";
 import Image from "next/image";
 import NavBar from "../ui/NavBar";
 import MobileMenu from "../ui/MobileMenu";
