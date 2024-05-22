@@ -22,3 +22,34 @@ export interface subMenuItem {
   label: string;
   link: string;
 }
+
+export interface iContactData {
+  label: string;
+  phone: string;
+  email: string;
+  address: address[];
+  pageImage: {
+    asset: {
+      url: string;
+    };
+  };
+  logo: {
+    asset: {
+      url: string;
+    };
+  };
+  socialMedia: socialMedia[];
+}
+
+interface address {
+  label: string;
+  street: string;
+  zipCode: string;
+  city: string;
+  country: string;
+}
+
+interface socialMedia {
+  label: string;
+  url: string;
+}

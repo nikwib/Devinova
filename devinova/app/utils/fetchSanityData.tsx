@@ -19,6 +19,7 @@ const getData = async (query: string, contentName: string) => {
       console.error(errors);
     } else {
       revalidatePath("/");
+      revalidatePath("/contact");
       return sanityData;
     }
   } catch (error) {

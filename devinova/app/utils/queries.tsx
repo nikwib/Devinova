@@ -8,9 +8,9 @@ query {allMenuItems(sort:[{ orderRank:  ASC}]){
     label 
     link
   }
+  }
 }
-}
-    `;
+`;
 
 export const allSectionData = `
   query {
@@ -28,5 +28,37 @@ export const allSectionData = `
         buttonType 
         action
     }
-}
-    `;
+  }
+`;
+
+export const contactData = `
+  query {
+    allContact {
+      label
+      phone
+      email
+      address {
+        label
+        street
+        zipCode
+        city
+        country
+      }
+      pageImage {
+        asset {
+          url
+        }
+      }
+      logo {
+        asset {
+          url
+        }
+      }
+      socialMedia {
+        label
+        url
+      }
+    }
+  }
+  
+`;
