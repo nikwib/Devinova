@@ -14,15 +14,16 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        neutral200: '#1F2228',
-        secondary: '#42cdc1', //secondary
-        customGrey: '#2b303a',
-        primary: '#9747FF', //primary
-        notification: '#64B8FF',
-        neutralGrey: '#EDF0F7',
-        neutralGreyNight: '#2B303A'
-
-      }
+        neutral200: "#1F2228",
+        secondary: "#42cdc1", //secondary
+        customGrey: "#2b303a",
+        primary: "#9747FF", //primary
+        notification: "#64B8FF",
+        neutralGrey: "#EDF0F7",
+        neutralGreyNight: "#2B303A",
+        primaryBg: "#121418",
+        // primaryBg: "#150B1B",
+      },
     },
   },
   plugins: [],
