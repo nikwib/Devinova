@@ -46,7 +46,7 @@ const HeroSection = ({
             <strong>Challenges:</strong> Creating a seamless interface that
             could intuitively analyze journal entries and provide contextually
             appropriate scripture and insights required a deep understanding of
-            both AI technology and theological principles.
+            both AI technology and UX principles.
           </p>
           <p>
             <strong>Solutions:</strong> Our team developed a sophisticated AI
