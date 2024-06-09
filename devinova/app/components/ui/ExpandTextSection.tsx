@@ -26,7 +26,7 @@ const ExpandTextSection = ({
       style={{ maxHeight: open ? `${contentHeight}px` : "0" }}
     >
       <p
-        className="transition-all ease-in-out duration-1000 dark:text-neutralGrey border-white"
+        className="transition-all ease-in-out duration-1000 text-neutralGrey border-white"
         ref={contentRef}
         style={{ transform: open ? "translateY(0)" : "translateY(-100%)" }}
       >

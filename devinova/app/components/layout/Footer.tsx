@@ -12,9 +12,9 @@ const Footer = () => {
         <p className="text-slate-400">niklas@devinova.se</p>
       </div>
       <div className="flex gap-6">
-        <FaXTwitter />
+        {/* <FaXTwitter />
         <FaInstagram />
-        <FaLinkedinIn />
+        <FaLinkedinIn /> */}
       </div>
     </div>
   );

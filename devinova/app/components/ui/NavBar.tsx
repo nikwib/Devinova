@@ -26,7 +26,7 @@ const NavBar = ({ data }: { data: menuItems[] }) => {
             )}
           </li>
         ))}
-        <LightMode />
+        {/* <LightMode /> */}
       </ul>
     </div>
   );

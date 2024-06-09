@@ -10,7 +10,7 @@ const CardDesktop = ({
   image: StaticImageData;
 }) => {
   const text = (
-    <p className="dark:text-neutralGrey text-sm tracking-wide leading-6 p-1">
+    <p className="text-neutralGrey text-sm tracking-wide leading-6 p-1">
       {data.body}
     </p>
   );

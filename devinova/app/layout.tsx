@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Quicksand } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Quicksand({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-gray-700 ${inter.className}`}>
+      <body className={`bg-neutral200 ${inter.className}`}>
         <Header />
         {children}
         <Footer />

@@ -20,10 +20,10 @@ const Expand = ({
 
   return (
     <article className="pb-5 w-full p-5">
-      <section className="border-b-[1px] pb-2 pl-5 flex items-center justify-between dark:border-white">
+      <section className="border-b-[1px] pb-2 pl-5 flex items-center justify-between border-white">
         <h3
           className={`text-3xl ${
-            textColor ? textColor : "dark:text-neutralGrey"
+            textColor ? textColor : "text-neutralGrey"
           }`}
         >
           {data.title}

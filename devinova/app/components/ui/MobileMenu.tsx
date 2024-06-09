@@ -10,7 +10,7 @@ const MobileMenu = ({ data }: { data: menuItems[] }) => {
   const [open, setOpen] = useState(false);
   return (
     <div className="relative flex items-center gap-4 text-neutralGrey lg:hidden overflow-hidden">
-      <LightMode />
+      {/* <LightMode /> */}
       <GiHamburgerMenu
         className="text-3xl cursor-pointer hover:scale-125 duration-500"
         onClick={() => setOpen(!open)}
@@ -45,7 +45,7 @@ const MobileMenu = ({ data }: { data: menuItems[] }) => {
                   className=" max-w-fit py-2 hover:border-b-4 border-violet-400 transition-all duration-100 ease-in-out"
                   key={index}
                 >
-                  {item.label}
+                  <a href={item.link}>{item.label}</a>
                 </li>
               )
             )}

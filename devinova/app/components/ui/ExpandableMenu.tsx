@@ -26,7 +26,7 @@ const ExpandableMenu = ({
         <p className={`hover:border-b-4 border-${lineColor} cursor-pointer`}>
           {data.label}
         </p>
-        <button className={`text-2xl dark:text-neutralGrey`}>
+        <button className={`text-2xl text-neutralGrey`}>
           {open ? <IoIosArrowUp /> : <IoIosArrowDown />}
         </button>
       </section>
@@ -35,7 +35,7 @@ const ExpandableMenu = ({
           open ? "grid-rows-[1fr]" : " grid-rows-[0fr]"
         } duration-500`}
       >
-        <div className=" overflow-hidden dark:text-neutralGrey duration-1000">
+        <div className=" overflow-hidden text-neutralGrey duration-1000">
           {data.subMenu.map((item: subMenuItem, index: number) => (
             <a
               className={`pl-2 pt-1 hover:border-b-4 flex items-center justify-between border-${lineColor}`}

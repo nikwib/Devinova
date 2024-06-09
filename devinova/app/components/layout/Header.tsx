@@ -9,7 +9,7 @@ const Header = async () => {
   const menu: menuItems[] | null = await getData(allMenuItems, "allMenuItems");
 
   return (
-    <div className=" bg-[#1f2228] lg:border-none border-b-gray-600 border-b-4 p-8 flex flex-row justify-between">
+    <div className=" bg-neutral200 p-8 flex flex-row justify-between">
       <div>
         <Image src={logo} alt="Devinova Logo" width={200} height={100} />
       </div>
